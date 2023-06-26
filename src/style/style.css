@@ -1,0 +1,75 @@
+.Hotspot {
+  display: block;
+  width: 30px;
+  height: 30px;
+  border-radius: 20px;
+  border: 5px solid rgb(95, 95, 95);
+  background-color: rgb(199, 199, 199);
+  box-sizing: border-box;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
+    rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
+    rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+  pointer-events: none;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  -ms-border-radius: 20px;
+  -o-border-radius: 20px;
+}
+
+.Hotspot[slot="hotspot-"] {
+  --min-hotspot-opacity: 0;
+  background-color: red;
+}
+
+.Hotspot[slot="hotspot-"]:not([data-visible]) {
+  background-color: transparent;
+  border: 3px solid blue;
+}
+
+.HotspotAnnotation {
+  background-color: #242424d4;
+  position: absolute;
+  transform: translate(10px, 10px);
+  border-radius: 10px;
+  padding: 15px;
+  color: aliceblue;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 16px;
+}
+/* This keeps child nodes hidden while the element loads */
+:not(:defined) > * {
+  display: none;
+}
+
+h1 {
+  text-align: center;
+}
+
+model-viewer {
+  background-color: blue;
+}
+
+button {
+  width: 100px;
+  height: 100px;
+}
+p {
+  font-size: 20px;
+}
+
+td {
+  white-space: pre;
+}
+
+.box-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 100%;
+}
+
+.box {
+  width: 100vw;
+  height: 30vh;
+  border: 1px solid black;
+}
