@@ -11,7 +11,8 @@ node_modules
 dist
 dist-ssr
 *.local
-# public/models/
+src/components/ModelViewer2.jsx
+public/models/
 
 # Editor directories and files
 .vscode/*
