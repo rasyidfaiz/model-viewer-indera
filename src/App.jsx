@@ -1,14 +1,14 @@
-import { BrowserRouter, Route, Routes } from 'react-router-dom';
-import ModelViewer from './components/ModelViewer';
+// import { BrowserRouter, Route, Routes } from 'react-router-dom';
+import ModelViewer from "./components/ModelViewer";
+// import ModelTitle from './components/ModelTitle';
+// import ModelTable from './components/ModelTable';
 
 function App() {
   return (
-    <div className='container'>
-      <BrowserRouter>
-        <Routes>
-          <Route path='/' element={<ModelViewer />} />
-        </Routes>
-      </BrowserRouter>
+    <div className="container">
+      {/* <ModelTitle /> */}
+      <ModelViewer />
+      {/* <ModelTable /> */}
     </div>
   );
 }

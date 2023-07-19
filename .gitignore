@@ -11,8 +11,11 @@ node_modules
 dist
 dist-ssr
 *.local
-src/components/ModelViewer2.jsx
-public/models/
+# trash
+# public/models/
+# dist.zip
+# db.json
+# .env
 
 # Editor directories and files
 .vscode/*

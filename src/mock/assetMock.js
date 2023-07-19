@@ -1,0 +1,36 @@
+export const assetMock = {
+  model: [
+    {
+      id: 1,
+      title: "G2 Combat",
+      type: "3D Model",
+      link: "./models/g2_combat_pistol.glb",
+    },
+    {
+      id: 2,
+      title: "Base Transceiver Station",
+      type: "3D Model",
+      link: "./models/base_transceiver_station.glb",
+    },
+    {
+      id: 3,
+      title: "Oil Conditioning Unit",
+      type: "3D Model",
+      link: "./models/oil_conditioning_unit.glb",
+    },
+  ],
+  annotation: [
+    {
+      id: 1,
+      list: ["Barrel", "Magazine", "Handguard", "Grip", "Trigger"],
+    },
+    {
+      id: 2,
+      list: ["Microwave antena", "Dist box", "Antenna cable", "BBU", "Top end"],
+    },
+    {
+      id: 3,
+      list: ["Pump", "Nozzle", "Pressure Gauge", "Valve", "Controller"],
+    },
+  ],
+};
